@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="11dp"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp"
+    android:paddingTop="11dp"
+    tools:context=".MainActivity"
+    android:id="@+id/bayts"
+    android:background="#2e3436">
+
+
+
+
+    <TextView
+        android:id="@+id/surahname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/cardview_light_background"
+
+
+        />
+
+    <TextView
+        android:id="@+id/seachnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="البحث داخل الأبيات"
+        android:layout_marginBottom="1dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4CAF50"
+        android:layout_below="@+id/surahname"
+
+
+        />
+
+
+
+
+
+
+
+    <android.support.v7.widget.SearchView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seachnote"
+        android:layout_marginBottom="1dp"
+
+        app:queryHint="ابحث داخل السورة بالكلمة القرآنية او الفرش او المدهب او الشاهد "
+      app:defaultQueryHint="ابحث داخل السورة بالكلمة القرآنية او الفرش او المدهب او الشاهد"
+        android:id="@+id/searchView"/>
+
+
+    <TableRow
+        android:id="@+id/separateline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/searchView"
+        android:background="@color/cardview_light_background"></TableRow>
+
+
+    <TextView
+        android:id="@+id/seachdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#4CAF50"
+        android:layout_below="@+id/separateline"
+
+
+        />
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/seachdescription"/>
+        />
+
+
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/cardview_light_background"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="لا يوجد فرش لهذه السورة" />
+
+</RelativeLayout>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.qr.mibrahim.qiraat.farshtyybah">
+
+
+
+        <TextView
+            android:id="@+id/try1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+
+            android:text="Android Version"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+    </android.support.constraint.ConstraintLayout>-->
